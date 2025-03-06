@@ -104,6 +104,9 @@ footer h2{
 .ocultar{
     display: none;
 }
+.subMenu2{
+    display: none;
+}
 
 @media (min-width:576px){
     body{
@@ -113,9 +116,29 @@ footer h2{
         'pie principal';
         grid-template-columns: 1fr 2fr ;
     }
-
     .ocultar{
-        display: inline;
+        display:block;
+    }
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .menu{
+        display: none;
+    }
+    .subMenu2{
+        display: block;
+    }
+
+    nav ul{
+        display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    align-items: flex-start;
+    font-weight: bolder;
+    font-size: 14px;
+    color: white;
     }
 }
 
