@@ -101,6 +101,22 @@ footer h2{
     margin-left: 28%;
 }
 
+.ocultar{
+    display: none;
+}
 
+@media (min-width:576px){
+    body{
+        grid-template-areas:
+        'menu-principal filtro'
+        'menu-principal principal'
+        'pie principal';
+        grid-template-columns: 1fr 2fr ;
+    }
+
+    .ocultar{
+        display: inline;
+    }
+}
 
 
